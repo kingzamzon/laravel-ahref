@@ -1,0 +1,50 @@
+{
+    "name": "kingzamzon/laravel-ahref",
+    "description": "Laravel Package for Ahref",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "role": "Developer",
+            "name": "kingzamzon",
+            "email": "adesanoye.samson1@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Kingzamzon\\Ahref\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "kingzamzon\\Ahref\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0",
+        "laravel/pint": "^1.6",
+        "pestphp/pest": "^1.22",
+        "phpstan/phpstan": "^1.10"
+    },
+    "scripts": {
+        "pint": [
+            "./vendor/bin/pint"
+        ],
+        "stan": [
+            "./vendor/bin/phpstan analyse"
+        ],
+        "test": [
+            "./vendor/bin/pest"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
